@@ -10,6 +10,7 @@ public class AmmoCount : MonoBehaviour
     [SerializeField] int Bullet=30; //silahýn içindeki mermi - max 30 gibi
     [SerializeField] Text ceptekiMermi;
     [SerializeField] Text silahtaMermi;
+    [SerializeField] GameObject reloadicon;
 
     
     // Start is called before the first frame update
@@ -57,10 +58,12 @@ public class AmmoCount : MonoBehaviour
     {
         if (Ammo == 0 || Bullet == 30) { return; }
         StartCoroutine(ReloadDelay());
+        reloadicon.SetActive(true);
     }
     IEnumerator ReloadDelay()
     {
         yield return new WaitForSeconds(2f);
+        reloadicon.SetActive(false);
         int kapasite = 30 - Bullet;
         Bullet = 30;
         Ammo -= kapasite;
