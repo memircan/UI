@@ -523,7 +523,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 315550541}
         m_TargetAssemblyTypeName: MenuManagerMenuScene, Assembly-CSharp
-        m_MethodName: PlayButton
+        m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
