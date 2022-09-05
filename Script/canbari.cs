@@ -10,7 +10,6 @@ public class canbari : MonoBehaviour
     public Image canBari;
     public GameObject kalp;
 
-
     void Start()
     {
         health = maxHealth;
@@ -33,7 +32,6 @@ public class canbari : MonoBehaviour
         {
             kalp.GetComponent<Image>().color = Color.red;
             health = 0;
-
             DeathPlayer();
         }
     }
