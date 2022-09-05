@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d032257507c7fbf41838298086b774a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
   canBari: {fileID: 865693511}
   canText: {fileID: 987701013}
   kalp: {fileID: 1078238462}
@@ -1213,7 +1214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &987701012
 RectTransform:
   m_ObjectHideFlags: 0
